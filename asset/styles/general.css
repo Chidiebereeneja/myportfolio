@@ -1,0 +1,11 @@
+@font-face {
+    src: url(/asset/font/static/FiraCode-SemiBold.ttf);
+    font-family: FiraCode;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: FiraCode;
+}
