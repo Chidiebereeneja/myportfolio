@@ -1,13 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/asset/styles/general.css">
-    <link rel="stylesheet" href="/asset/styles/index.css">
-    <script src="/scripts/index.js" defer ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/asset/styles/general.css" />
+    <link rel="stylesheet" href="/asset/styles/index.css" />
+    <script src="/scripts/index.js" type="module" defer></script>
     <title>My Portfolio</title>
-</head>
-<body>
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar-container container">
+          <input type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li class="link-style">
+              <a href="/">Home</a>
+              <div class="border--style">
+                <span class="line--1"></span>
+                <span class="line--2"></span>
+              </div>
+            </li>
+            <li class="link-style">
+              <a href="/pages/about-us.html">About</a>
+              <div class="border--style">
+                <span class="line--1"></span>
+                <span class="line--2"></span>
+              </div>
+            </li>
+            <li class="link-style">
+              <a href="/pages/skills.html">Skills</a>
+              <div class="border--style">
+                <span class="line--1"></span>
+                <span class="line--2"></span>
+              </div>
+            </li>
+            <li class="link-style">
+              <a href="/pages/projects.html">Projects</a>
+              <div class="border--style">
+                <span class="line--1"></span>
+                <span class="line--2"></span>
+              </div>
+            </li>
+            <li class="link-style">
+              <a href="/pages/contact-us.html">Contact</a>
+              <div class="border--style">
+                <span class="line--1"></span>
+                <span class="line--2"></span>
+              </div>
+            </li>
+          </ul>
+          <div class="logo">
+            <a href="./">Portfolio.</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="profile--container">
+        <aside class="profile--image">
+          <figure>
+            <img src="/asset/images/myProfile.png" alt="" />
+          </figure>
+        </aside>
+
+        <aside class="profile--text">
+          <strong>Hello it's me</strong>
+          <h1>Chidiebere Eneja</h1>
+          <p>And I'm a <span>Frontend Developer</span></p>
+
+          <section class="choose--me">
+            <h2>Why choose me?</h2>
+
+            <div class="choose--me--header">
+              <a href="#User-Centric" class="user active" >User-Centric Approach</a>
+              <a href="#Cutting-Edge" class="user">
+                Cutting-Edge Technologies
+              </a>
+              <a href="#Collaboration" class="user">Collaboration</a>
+            </div>
+
+            <div class="choose--me--text">
+              <div id="User-Centric">
+                <p class="user-text">
+                  I believe in putting users at the heart of every design
+                  decision. Intuitive navigation, delightful micro-interactions,
+                  and performance optimization are my priorities.
+                </p>
+                <p>
+                  Attention to detail is my superpower. From typography choices
+                  to color palettes, I ensure that every element aligns
+                  seamlessly.
+                </p>
+              </div>
+
+              <div id="Cutting-Edge">
+                <p>
+                  Staying up-to-date with the latest tools and frameworks allows
+                  me to create modern, future-proof solutions.
+                </p>
+              </div>
+
+              <div id="Collaboration">
+                <p>
+                  Let’s work together to bring your vision to life. I value open
+                  communication and thrive in collaborative environments.
+                </p>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </section>
+    </main>
+  </body>
 </html>
