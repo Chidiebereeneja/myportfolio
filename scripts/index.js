@@ -1,8 +1,5 @@
 "use strict";
 
-import { tabComponent, defaultDisplay } from "./modules/tab-component.js";
-
-(function () {
-  defaultDisplay();
-  tabComponent();
-})();
+setTimeout(function () {
+  window.location.replace("pages/homePage.html");
+}, 10000);

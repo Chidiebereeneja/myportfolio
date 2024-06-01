@@ -28,6 +28,11 @@ function tabComponent() {
         });
 
       document.getElementById(targetAttr).classList.remove("display--none");
+
+      check.map((el) => {
+        el.classList.remove("active");
+      });
+      e.target.classList.add("active");
     }
   });
 }
