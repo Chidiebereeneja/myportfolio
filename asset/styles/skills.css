@@ -2,6 +2,7 @@
   --main-color: #1d1d1d;
   --primary-color: rgb(2, 255, 213);
   --secondary-color: #c5c5c5;
+  --dark-orange: rgb(155, 70, 40);
 }
 
 *,
@@ -15,4 +16,45 @@
 body {
   background-color: var(--main-color);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  transform: translateY(11vh);
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill--header {
+  width: 100%;
+  margin-block-start: 8rem;
+  margin-block-end: 5rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 2px var(--primary-color),  0px 0px 2px var(--primary-color);
+}
+
+.skill--header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: 2rem;
+  color: var(--primary-color);
+  font-size: calc(2rem + 1vw);
+}
+
+.skill--header p {
+  max-width: 800px;
+  width: 100%;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  text-align: center;
 }
