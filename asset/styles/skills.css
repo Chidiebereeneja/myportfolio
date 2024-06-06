@@ -1,0 +1,18 @@
+:root {
+  --main-color: #1d1d1d;
+  --primary-color: rgb(2, 255, 213);
+  --secondary-color: #c5c5c5;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--main-color);
+  width: 100%;
+}
