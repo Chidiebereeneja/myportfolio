@@ -40,7 +40,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* box-shadow: 0px 0px 2px var(--primary-color),  0px 0px 2px var(--primary-color); */
 }
 
 .skill--header h1 {
@@ -50,78 +49,114 @@ main {
   color: var(--primary-color);
   font-size: calc(2rem + 1vw);
 }
-#skills--image {
+.skill--header  p {
   max-width: 800px;
   width: 100%;
-  height: 440px;
-  margin-block-start: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  padding: 1rem;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 5rem;
+  font-size: 1.3rem;
+  line-height: 26px;
   box-shadow: 0px 0px 4px var(--primary-color), 0px 0px 4px var(--primary-color);
   border-radius: 4px;
 }
-.skill--header #skills--image p {
-  width: 50%;
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
-}
-.skill--header #skills--image img {
-  width: 250px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center;
-  box-shadow: 0px 0px 3px;
-  border-radius: 4px;
-}
-.skill--header + section {
+.skill--header ~ section {
+  max-width: 800px;
   width: 100%;
-  color: var(--secondary-color);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  margin-top: 1rem;
+  padding-block-start: 3rem;
 }
-.skill--header + section figure {
-  width: 100%;
-}
-.skill--header + section figure img {
-  width: 100%;
-  height: 307px;
-}
-.skill--header + section h2 {
+.skill--header ~ section h2 {
   color: var(--primary-color);
   font-size: 2rem;
+  margin-top: 3rem;
 }
-.skill--header + section p {
+.responsive,
+.collaboration {
+  display: flex;
+  gap: 1rem;
+}
+.problem {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+.skill--header ~ section p {
+  width: 40%;
+  margin-top: 10px;
+  color: var(--secondary-color);
+  line-height: 26px;
   font-size: 1.2rem;
 }
-.skill--header + section mark {
+#about--language-container p{
+  width: 100%;
+}
+.skill--header ~ section p + img {
+  width: 45%;
+  height: 290px;
+  margin-top: 1rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  box-shadow: 1px 0px 2px var(--secondary-color);
+}
+.skill--header ~ section p + img:nth-child(2) {
+  box-shadow: -1px 0px 2px var(--secondary-color);
+}
+.skill--header + section figure {
+  display: flex;
+  gap: 1.5rem;
+  margin-block-end: 1rem;
+}
+.skill--header + section figure img {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.framework--text {
+  max-width: 800px;
+  width: 100%;
+  padding: 1rem;
+}
+.framework--text p {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  line-height: 26px;
+}
+.framework--text h3 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-block-start: 2rem;
+  margin-block-end: 1rem;
+  font-size: 1.5rem;
+}
+.framework--text mark {
   background-color: transparent;
   color: var(--dark-orange);
-  font-size: 1.1rem;
-  font-weight: 800;
 }
-.skill--header + section li {
-  list-style-type: decimal-leading-zero;
+.framework--text ul {
+  padding-block: 1rem;
+}
+.framework--text ul li {
+  list-style-type: decimal;
   list-style-position: inside;
+  color: var(--dark-orange);
+  font-size: 1.2rem;
 }
 
-@media (max-width: 600px) {
-  #skills--image {
-    height: 100%;
+@media (min-width: 768px) {
+  .responsive,
+  .collaboration {
+    display: flex;
     gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
   }
-  .skill--header #skills--image p {
-    width: 100%;
-  }
-  .skill--header #skills--image img {
-    width: 100%;
-    height: 300px;
+  .problem {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
   }
 }
