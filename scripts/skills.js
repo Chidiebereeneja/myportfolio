@@ -9,15 +9,17 @@ const obsCallback = function (enteries, observer) {
   if (!entry.isIntersecting) return;
   entry.target.src = entry.target.dataset.src;
   entry.target.classList.remove("lazy-loading");
+
+  observer.unobserve(entry.target)
+
 };
 
 const interObs = new IntersectionObserver(obsCallback, {
   root: null,
   threshold: 0,
-  rootMargin: "50px",
+  rootMargin: "100px",
 });
 
-// interObs.observe(section);
 
 sections.forEach((section) => {
   const img = section.querySelector("img");
@@ -28,15 +30,16 @@ sections.forEach((section) => {
 const obsCallback2 = function (entries, observer) {
   const [entry] = entries;
 
-  if(!entry.isIntersecting) return;
+  if (!entry.isIntersecting) return;
   const figure = entry.target.children[0];
-  figure.querySelectorAll('img').forEach(val => {
-    val.src = val.dataset.src
-  })
+  figure.querySelectorAll("img").forEach((val) => {
+    val.src = val.dataset.src;
+  });
+  observer.unobserve(entry.target);
 };
 const interObs2 = new IntersectionObserver(obsCallback2, {
   root: null,
   threshold: 0,
-  rootMargin: "50px",
+  rootMargin: "100px",
 });
 interObs2.observe(langContainer);
