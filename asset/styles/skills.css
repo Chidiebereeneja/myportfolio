@@ -110,6 +110,18 @@ main {
   line-height: 26px;
   font-size: 1.2rem;
 }
+#about--language-container figure {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  margin-block-end: 1rem;
+}
+#about--language-container figure img {
+  width: 32%;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
 #about--language-container p{
   width: 100%;
 }
@@ -125,16 +137,7 @@ main {
 .skill--header ~ section p + img:nth-child(2) {
   box-shadow: -1px 0px 2px var(--secondary-color);
 }
-.skill--header + section figure {
-  display: flex;
-  gap: 1.5rem;
-  margin-block-end: 1rem;
-}
-.skill--header + section figure img {
-  background-color: #fff;
-  padding: 0.5rem;
-  border-radius: 4px;
-}
+
 .framework--text {
   max-width: 800px;
   width: 100%;
@@ -165,8 +168,15 @@ main {
   color: var(--dark-orange);
   font-size: 1.2rem;
 }
+.lazy-loading {
+  opacity: 0.5;
+  filter: blur(5px);
+}
 
 @media (min-width: 768px) {
+  #about--language-container figure img:nth-child(2) {
+    padding: 1.1rem;
+  }
   .responsive,
   .collaboration {
     display: flex;
