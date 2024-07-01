@@ -7,8 +7,11 @@ const fullAddress = `Achara okutu,
 	Nsukka Local Government, 
 	Enugu State, Nigeria.`;
 
+let check = false;
+
 function typeWriter(element, text, i = 0) {
 	if (element.textContent === i) {
+		element.textContent = "";
 	}
 	element.textContent += text[i];
 	if (i === text.length - 1) {
@@ -18,9 +21,7 @@ function typeWriter(element, text, i = 0) {
 	setTimeout(() => typeWriter(element, text, i + 1), 50);
 }
 
-let check = false;
-
-addressBtn.addEventListener("click", function () {
+function renderAddress() {
 	if (!check) {
 		typeWriter(showAddressCont, fullAddress);
 		check = true;
@@ -28,4 +29,8 @@ addressBtn.addEventListener("click", function () {
 		showAddressCont.textContent = "";
 		check = false;
 	}
-});
+}
+
+addressBtn.addEventListener("click", renderAddress);
+
+export { typeWriter };
