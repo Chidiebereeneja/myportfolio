@@ -1,26 +1,31 @@
 "use strict";
 
 const addressBtn = document.querySelector(".my--address--btn");
-const showAddressCont = document.querySelector(".show--address");
+const showAddressCont = document.querySelector(".test--typeWriter");
 
-let trackClick = false;
-addressBtn.addEventListener("click", function (e) {
-  if (!trackClick) {
-    showAddressCont.style.display = "inline";
-    trackClick = true;
-  } else {
-    showAddressCont.style.display = "none";
-    trackClick = false;
-  }
+const fullAddress = `Achara okutu, 
+	Nsukka Local Government, 
+	Enugu State, Nigeria.`;
+
+function typeWriter(element, text, i = 0) {
+	if (element.textContent === i) {
+	}
+	element.textContent += text[i];
+	if (i === text.length - 1) {
+		return;
+	}
+
+	setTimeout(() => typeWriter(element, text, i + 1), 50);
+}
+
+let check = false;
+
+addressBtn.addEventListener("click", function () {
+	if (!check) {
+		typeWriter(showAddressCont, fullAddress);
+		check = true;
+	} else {
+		showAddressCont.textContent = "";
+		check = false;
+	}
 });
-
-(function() {
-  const timeContainer = showAddressCont.querySelector('span');
-  const date = new Date().toLocaleDateString('default', {
-    day: '2-digit',
-    month: 'long',
-    year: 'numeric'
-  })
-  timeContainer.textContent = `${date}.`;
-
-})();
