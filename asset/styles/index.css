@@ -1,36 +1,35 @@
 :root {
-  --main-color: #1d1d1d;
-  --primary-color: rgb(2, 255, 213);
-  --secondary-color: #e7e7e7;
+	--main-color: #1d1d1d;
+	--primary-color: rgb(2, 255, 213);
+	--secondary-color: #e7e7e7;
 }
 body {
-  background-color: var(--main-color);
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  overflow-y: hidden;
+	background-color: var(--main-color);
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	overflow-y: hidden;
 }
 main {
-  max-width: 1200px;
-  width: 97%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+	max-width: 1200px;
+	width: 97%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* overflow: hidden; */
 }
 h1 {
-  color: var(--primary-color);
-  text-align: center;
-  font-size: calc(1.3rem + 1vw);
-  animation: welcome alternate 10s forwards ease-in;
+	color: var(--primary-color);
+	text-align: center;
+	font-size: calc(1.3rem + 1vw);
+	/* animation: welcome alternate 10s forwards ease-in; */
 }
 
-
-@keyframes welcome{
+/* @keyframes welcome{
   0% {
     transform: scale(0);
   }
@@ -54,4 +53,4 @@ h1 {
     opacity: 0.1;
     transform: scale(1.7);
   }
-}
+} */
