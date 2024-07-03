@@ -1,11 +1,28 @@
 "use strict";
-import { typeWriter } from "./about-us.js";
 
-const h1Element = document.querySelector(".h1");
-const textDisplay = `I am glad that you make out time to take a look at my portfolio!`;
+const divElement = document.querySelector("div");
+const textDisplay = `Welcome! I am glad that you make out time, to take a look at my portfolio, Explore my frontend journey!`;
 
-typeWriter(h1Element, textDisplay);
+function typeWriter(element, text, i = 0) {
+	if (element.textContent === i) {
+		element.textContent = "";
+	}
+	element.textContent += text[i];
+	if (i === text.length - 1) {
+		return;
+	}
 
-setTimeout(function () {
-	window.location.replace("pages/homePage.html");
-}, 10000);
+	setTimeout(() => typeWriter(element, text, i + 1), 70);
+}
+typeWriter(divElement, textDisplay);
+
+function styleElement() {
+	divElement.classList.add("styleAnimation");
+
+	setTimeout(function () {
+		window.location.replace("pages/homePage.html");
+	}, 15000);
+}
+styleElement();
+
+export { typeWriter };
