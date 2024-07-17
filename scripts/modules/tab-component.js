@@ -26,10 +26,8 @@ function tabComponent() {
 				.filter((el) => el.textContent !== targetContent)
 				.map((el) => {
 					const attr = el.getAttribute("href").slice(1);
-					document.getElementById(attr).classList.add("display--none");
+					console.log(attr);
 				});
-
-			document.getElementById(targetAttr).classList.remove("display--none");
 
 			check.map((el) => {
 				el.classList.remove("active");
