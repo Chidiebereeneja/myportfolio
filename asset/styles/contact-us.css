@@ -97,7 +97,7 @@ main ul li:nth-child(2) button {
 	box-shadow: 0px 0px 2px transparent;
 }
 main ul li button:hover {
-	background-color: var(--secondary-color);
+	background-color: #858585;
 }
 
 @media (min-width: 768px) {
