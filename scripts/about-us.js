@@ -13,7 +13,9 @@ function typeWriter(element, text, i = 0) {
 	if (element.textContent === i) {
 		element.textContent = "";
 	}
+
 	element.textContent += text[i];
+
 	if (i === text.length - 1) {
 		return;
 	}
@@ -23,6 +25,7 @@ function typeWriter(element, text, i = 0) {
 
 function renderAddress() {
 	if (!check) {
+		addressBtn.setAttribute("disabled", "");
 		typeWriter(showAddressCont, fullAddress);
 		check = true;
 	} else {

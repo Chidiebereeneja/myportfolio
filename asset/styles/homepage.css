@@ -130,6 +130,7 @@ main aside .profile--details > p span {
 	display: grid;
 	grid-template-columns: 1fr;
 	padding: 15px;
+	margin-bottom: 2rem;
 	line-height: 24px;
 }
 .choose--me--text div {
@@ -140,9 +141,6 @@ main aside .profile--details > p span {
 	align-items: center;
 }
 
-.display--none {
-	display: none;
-}
 .active {
 	background-color: rgb(1, 105, 88) !important;
 	color: rgb(197, 195, 195) !important;
