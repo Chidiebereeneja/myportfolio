@@ -5,10 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/asset/styles/general.css" />
 		<link rel="stylesheet" href="/asset/styles/narbar.css" />
-		<link rel="stylesheet" href="/asset/styles/contact-us.css" />
-		<script src="/scripts/contact-us.js" defer></script>
+		<link rel="stylesheet" href="/asset/styles/homepage.css" />
+		<script src="/scripts/homepage.js" type="module" defer></script>
 		<script src="/scripts/navbar.js" defer></script>
-		<title>Contact us</title>
+		<title>My Portfolio</title>
 	</head>
 	<body>
 		<header>
@@ -65,54 +65,66 @@
 		</header>
 
 		<main>
-			<h1>Contact me</h1>
-			<ul>
-				<li>
-					<button class="email--btn">
-						Email
-						<img src="/asset/images/gmail.png" alt="email" width="30px" />
-					</button>
-
-					<button class="call--btn">
-						Call
-						<img src="/asset/images/call.png" alt="call" width="30px" />
-					</button>
-
-					<button class="whatsapp--btn">
-						Whatsapp
-						<img src="/asset/images/whatsapp.png" alt="whatsapp" width="30px" />
-					</button>
-				</li>
-
-				<li>
-					<h2>Social media handles</h2>
-
-					<div class="media__btn-container">
-						<button class="facebook--btn">
-							Facebook
-							<img
-								src="/asset/images/facebook.png"
-								alt="facebook"
-								width="30px"
-							/>
-						</button>
-
-						<button class="instagram--btn">
-							Instagram
-							<img
-								src="/asset/images/instagram.png"
-								alt="instagram"
-								width="30px"
-							/>
-						</button>
-
-						<button class="twitter--btn">
-							Twitter
-							<img src="/asset/images/twitter.png" alt="twitter" width="30px" />
-						</button>
+			<section class="profile--container">
+				<aside class="profile--image">
+					<div class="profile--details">
+						<strong>My name is</strong>
+						<h1>Chidiebere Eneja</h1>
+						<p>And I'm a <span>Frontend Developer</span></p>
 					</div>
-				</li>
-			</ul>
+
+					<figure>
+						<img src="/asset/images/myProfile.png" alt="" />
+					</figure>
+				</aside>
+
+				<aside class="profile--text">
+					<section class="choose--me">
+						<h2>Why choose me?</h2>
+
+						<div class="choose--me--header">
+							<a href="#User-Centric" class="user active">
+								User-Centric Approach
+							</a>
+							<a href="#Cutting-Edge" class="user">
+								Cutting-Edge Technologies
+							</a>
+							<a href="#Collaboration" class="user">Collaboration</a>
+						</div>
+
+						<div class="choose--me--text">
+							<div id="User-Centric">
+								<p>
+									I believe in putting users at the heart of every design
+									decision. Intuitive navigation, delightful
+									micro-interactions,and performance optimization are my
+									priorities.
+								</p>
+								<p>
+									Attention to detail is my superpower. From typography choices
+									to color palettes, I ensure that every element aligns
+									seamlessly.
+								</p>
+							</div>
+
+							<div id="Cutting-Edge">
+								<p>
+									Staying up-to-date with the latest tools and frameworks allows
+									me to create modern, future-proof solutions.
+								</p>
+							</div>
+
+							<div id="Collaboration">
+								<p>
+									Let’s work together to bring your / our vision to life. I
+									value open communication and thrive in collaborative
+									environments.
+								</p>
+							</div>
+						</div>
+					</section>
+				</aside>
+			</section>
 		</main>
 	</body>
 </html>
